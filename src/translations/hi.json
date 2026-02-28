@@ -5,7 +5,23 @@
     "about": "परिचय",
     "courses": "कोर्स",
     "resources": "संसाधन",
-    "contact": "संपर्क"
+    "contact": "संपर्क",
+    "exam": "परीक्षा",
+    "exam_ssc": "एसएससी परीक्षा",
+    "exam_teaching": "शिक्षण परीक्षा",
+    "exam_railways": "रेलवे परीक्षा",
+    "exam_stateGovt": "राज्य सरकार परीक्षा",
+    "exam_otherGovt": "अन्य सरकारी परीक्षा",
+    "currentAffairs": "समसामयिकी",
+    "currentAffairs_monthly": "मासिक समसामयिकी",
+    "currentAffairs_daily": "दैनिक समसामयिकी",
+    "currentAffairs_schemes": "सरकारी योजनाएं",
+    "quiz": "क्विज",
+    "resources_pyp": "पिछले वर्ष के प्रश्न",
+    "resources_currentAffairs": "समसामयिकी",
+    "resources_studyMaterial": "अध्ययन सामग्री",
+    "resources_testSeries": "टेस्ट सीरीज़",
+    "resources_videos": "वीडियो"
   },
   "common": {
     "language": "भाषा",
@@ -44,4 +60,3 @@
     "signUp": "अकाउंट बनाएँ"
   }
 }
-

@@ -1,11 +1,27 @@
 {
   "appName": "Knowledge Improvement Point (KIP)",
   "nav": {
-    "home": "Home",
+    "home": "HOME",
     "about": "About",
     "courses": "Courses",
-    "resources": "Resources",
-    "contact": "Contact"
+    "resources": "RESOURCES",
+    "contact": "CONTACT",
+    "exam": "EXAM",
+    "exam_ssc": "SSC EXAMS",
+    "exam_teaching": "TEACHING EXAMS",
+    "exam_railways": "RAILWAYS EXAMS",
+    "exam_stateGovt": "STATE GOVT. EXAMS",
+    "exam_otherGovt": "OTHER GOVT. EXAMS",
+    "currentAffairs": "CURRENT AFFAIRS",
+    "currentAffairs_monthly": "MONTHLY CURRENT AFFAIRS",
+    "currentAffairs_daily": "DAILY CURRENT AFFAIRS",
+    "currentAffairs_schemes": "GOVERNMENT SCHEMES",
+    "quiz": "QUIZ",
+    "resources_pyp": "PREVIOUS YEAR QUESTIONS",
+    "resources_currentAffairs": "CURRENT AFFAIRS",
+    "resources_studyMaterial": "STUDY MATERIAL",
+    "resources_testSeries": "TEST SERIES",
+    "resources_videos": "VIDEOS"
   },
   "common": {
     "language": "Language",
@@ -44,4 +60,3 @@
     "signUp": "Create account"
   }
 }
-
