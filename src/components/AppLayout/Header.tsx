@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
-import { BookOpen, Globe2, Moon, SunMedium, UserCircle2 } from "lucide-react";
+import { BookOpen, Globe2, Moon, SunMedium, } from "lucide-react";
 
-import { useAuth } from "@/components/Auth/AuthProvider";
-import { Button } from "@/components/UI/button";
-import { Switch } from "@/components/UI/switch";
+// import { useAuth } from "@/components/Auth/AuthProvider";
+// import { Button } from "@/components/UI/button";
+// import { Switch } from "@/components/UI/switch";
 import { setLanguage, type SupportedLanguage } from "@/translations/i18n";
 import { useThemeStore } from "@/store/themeStore";
 
@@ -29,7 +29,7 @@ export function Header() {
   const { t, i18n } = useTranslation();
   const theme = useThemeStore((s) => s.theme);
   const toggleTheme = useThemeStore((s) => s.toggleTheme);
-  const { user, logout } = useAuth();
+  // const { user, logout } = useAuth();
 
   const currentLang = (i18n.language === "hi" ? "hi" : "en") satisfies SupportedLanguage;
 
@@ -81,7 +81,7 @@ export function Header() {
             </button>
           </div>
 
-          {user ? (
+          {/* {user ? (
             <div className="flex items-center gap-2">
               <Link
                 href="/dashboard"
@@ -103,7 +103,7 @@ export function Header() {
                 <Link href="/auth/register">{t("common.register")}</Link>
               </Button>
             </div>
-          )}
+          )} */}
         </div>
       </div>
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 pb-3 md:hidden">

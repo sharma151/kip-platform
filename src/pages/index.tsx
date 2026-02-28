@@ -5,8 +5,14 @@ import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 import { Button } from "@/components/UI/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/UI/card";
-import { ExploreOfferings } from "@/components/Offerings/ExploreOfferings";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/UI/card";
+// import { ExploreOfferings } from "@/components/Offerings/ExploreOfferings";
 import { courses } from "@/utils/courses";
 import { resources } from "@/utils/resources";
 
@@ -40,7 +46,9 @@ export default function HomePage() {
           <h1 className="text-balance text-3xl font-semibold tracking-tight text-slate-900 dark:text-slate-50 md:text-4xl">
             {t("home.headline")}
           </h1>
-          <p className="max-w-xl text-sm leading-relaxed text-slate-700 dark:text-slate-300">{t("home.subhead")}</p>
+          <p className="max-w-xl text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+            {t("home.subhead")}
+          </p>
           <div className="flex flex-wrap gap-3">
             <Button asChild size="lg">
               <Link href="/courses" className="inline-flex items-center gap-2">
@@ -59,20 +67,34 @@ export default function HomePage() {
           </p>
           <div className="grid grid-cols-3 gap-4 text-center text-sm">
             <div className="rounded-2xl bg-white/80 p-3 shadow-sm backdrop-blur dark:bg-slate-950/70">
-              <p className="text-2xl font-semibold text-slate-900 dark:text-slate-50">3</p>
-              <p className="mt-1 text-xs text-slate-600 dark:text-slate-400">Core tracks</p>
+              <p className="text-2xl font-semibold text-slate-900 dark:text-slate-50">
+                3
+              </p>
+              <p className="mt-1 text-xs text-slate-600 dark:text-slate-400">
+                Core tracks
+              </p>
             </div>
             <div className="rounded-2xl bg-white/80 p-3 shadow-sm backdrop-blur dark:bg-slate-950/70">
-              <p className="text-2xl font-semibold text-slate-900 dark:text-slate-50">10+</p>
-              <p className="mt-1 text-xs text-slate-600 dark:text-slate-400">Hours content</p>
+              <p className="text-2xl font-semibold text-slate-900 dark:text-slate-50">
+                10+
+              </p>
+              <p className="mt-1 text-xs text-slate-600 dark:text-slate-400">
+                Hours content
+              </p>
             </div>
             <div className="rounded-2xl bg-white/80 p-3 shadow-sm backdrop-blur dark:bg-slate-950/70">
-              <p className="text-2xl font-semibold text-slate-900 dark:text-slate-50">2</p>
-              <p className="mt-1 text-xs text-slate-600 dark:text-slate-400">Languages</p>
+              <p className="text-2xl font-semibold text-slate-900 dark:text-slate-50">
+                2
+              </p>
+              <p className="mt-1 text-xs text-slate-600 dark:text-slate-400">
+                Languages
+              </p>
             </div>
           </div>
         </div>
       </motion.section>
+
+      {/* feature courses */}
 
       <motion.section
         className="mt-12 space-y-6"
@@ -81,8 +103,13 @@ export default function HomePage() {
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
       >
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-50">{t("home.featuredCourses")}</h2>
-          <Link href="/courses" className="text-sm text-slate-600 underline-offset-4 hover:underline dark:text-slate-300">
+          <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-50">
+            {t("home.featuredCourses")}
+          </h2>
+          <Link
+            href="/courses"
+            className="text-sm text-slate-600 underline-offset-4 hover:underline dark:text-slate-300"
+          >
             {t("nav.courses")}
           </Link>
         </div>
@@ -96,13 +123,15 @@ export default function HomePage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-slate-700 dark:text-slate-300">{course.summary}</p>
+                <p className="text-sm text-slate-700 dark:text-slate-300">
+                  {course.summary}
+                </p>
               </CardContent>
             </Card>
           ))}
         </div>
       </motion.section>
-
+      {/* popular Ressources */}
       <motion.section
         className="mt-12 space-y-6"
         initial={{ opacity: 0, y: 20 }}
@@ -110,8 +139,13 @@ export default function HomePage() {
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
       >
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-50">{t("home.featuredResources")}</h2>
-          <Link href="/resources" className="text-sm text-slate-600 underline-offset-4 hover:underline dark:text-slate-300">
+          <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-50">
+            {t("home.featuredResources")}
+          </h2>
+          <Link
+            href="/resources"
+            className="text-sm text-slate-600 underline-offset-4 hover:underline dark:text-slate-300"
+          >
             {t("nav.resources")}
           </Link>
         </div>
@@ -122,15 +156,15 @@ export default function HomePage() {
                 <CardTitle>{res.name}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-slate-700 dark:text-slate-300">{res.description}</p>
+                <p className="text-sm text-slate-700 dark:text-slate-300">
+                  {res.description}
+                </p>
               </CardContent>
             </Card>
           ))}
         </div>
       </motion.section>
-
-      <ExploreOfferings />
+      {/* <ExploreOfferings /> */}
     </>
   );
 }
-
