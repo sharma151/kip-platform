@@ -21,14 +21,10 @@ export const navigationConfig: NavItem[] = [
     ],
   },
   {
-    title: "PYQ",
-    subMenu: [],
-  },
-  {
     title: "CURRENT AFFAIRS",
     subMenu: [
-      { title: "DAILY CURRENT AFFAIRS", href: "/current-affairs/daily" },
       { title: "MONTHLY CURRENT AFFAIRS", href: "/current-affairs/monthly" },
+      { title: "DAILY CURRENT AFFAIRS", href: "/current-affairs/daily" },
       { title: "GOVERNMENT SCHEMES", href: "/current-affairs/schemes" },
     ],
   },
@@ -39,8 +35,12 @@ export const navigationConfig: NavItem[] = [
   {
     title: "RESOURCES",
     subMenu: [
-      { title: "STUDY MATERIAL", href: "/resources/study-material" },
+      {
+        title: "PREVIOUS YEAR QUESTIONS",
+        href: "/resources/previous-year-questions",
+      },
       { title: "CURRENT AFFAIRS", href: "/resources/current-affairs" },
+      { title: "STUDY MATERIAL", href: "/resources/study-material" },
       { title: "TEST SERIES", href: "/resources/test-series" },
       { title: "VIDEOS", href: "/resources/videos" },
     ],
