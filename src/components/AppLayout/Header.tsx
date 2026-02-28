@@ -1,13 +1,15 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
-import { BookOpen, Globe2, Moon, SunMedium, } from "lucide-react";
+import { BookOpen, Globe2, Moon, SunMedium } from "lucide-react";
 
 // import { useAuth } from "@/components/Auth/AuthProvider";
 // import { Button } from "@/components/UI/button";
 // import { Switch } from "@/components/UI/switch";
 import { setLanguage, type SupportedLanguage } from "@/translations/i18n";
 import { useThemeStore } from "@/store/themeStore";
+import { DynamicNavigation } from "@/components/AppLayout/DynamicNavigation";
+import { navigationConfig } from "@/config/navigation";
 
 function NavLink({ href, label }: { href: string; label: string }) {
   const router = useRouter();
@@ -48,12 +50,8 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
-          <NavLink href="/" label={t("nav.home")} />
-          <NavLink href="/about" label={t("nav.about")} />
-          <NavLink href="/courses" label={t("nav.courses")} />
-          <NavLink href="/resources" label={t("nav.resources")} />
-          <NavLink href="/contact" label={t("nav.contact")} />
+        <nav className="hidden items-center md:flex">
+          <DynamicNavigation navData={navigationConfig} />
         </nav>
 
         <div className="flex items-center gap-3">
