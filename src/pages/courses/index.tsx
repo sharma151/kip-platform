@@ -35,7 +35,8 @@ export default function CoursesPage() {
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {courses.map((course) => (
-            <CourseCard key={course.slug} course={course} />
+            <CourseCard key={course.title} course={course} />
+            
           ))}
         </div>
       </motion.section>
